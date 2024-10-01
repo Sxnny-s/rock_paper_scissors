@@ -69,7 +69,7 @@ function getRandomWeapon(){
 function checkWhoWon(botsWeapon,playersWeapon){
 	if(botsWeapon==playersWeapon){
 		displayCompleteMessage("There was tie");
-		document.getElementById("status").style.color = '#FFF'
+		document.getElementById("status").style.color = 'orange'
 	}
 	else if(
 		(botsWeapon=="rock" && playersWeapon=="lizard") ||
@@ -96,14 +96,14 @@ function increaseBotScore(){
 	botScore+=1;
 	document.getElementById("computerScore").innerHTML=botScore;
 	displayCompleteMessage("Sorry, you're a loser :(");
-	document.getElementById("status").style.color = '#FF5733'
+	document.getElementById("status").style.color = 'red'
 }
 
 function increasePlayerScore(){
 	playerScore+=1;
 	document.getElementById("humanScore").innerHTML=playerScore;
 	displayCompleteMessage("YOU WIN!!!");
-	document.getElementById("status").style.color = 'green'
+	document.getElementById("status").style.color = '#17c064'
 }
 
 
